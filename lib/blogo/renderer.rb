@@ -1,6 +1,7 @@
 require 'blogo/renderer/base'
 require 'blogo/renderer/html'
 require 'blogo/renderer/markdown'
+require 'blogo/renderer/bb'
 
 module Blogo
   module Renderer
@@ -8,6 +9,7 @@ module Blogo
     RENDERERS = {
       :markdown => Blogo::Renderer::Markdown,
       :html     => Blogo::Renderer::Html
+      :bb     => Blogo::Renderer::BB
     }
 
     # Find and initialize renderer for a particular markup format.
