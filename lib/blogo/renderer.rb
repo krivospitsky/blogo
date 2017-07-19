@@ -8,7 +8,7 @@ module Blogo
     # Maps format names to renderers.
     RENDERERS = {
       :markdown => Blogo::Renderer::Markdown,
-      :html     => Blogo::Renderer::Html
+      :html     => Blogo::Renderer::Html,
       :bb     => Blogo::Renderer::BB
     }
 
