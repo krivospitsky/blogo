@@ -8,6 +8,7 @@ module Blogo
     def assign_attributes
       @post.assign_attributes(@post_attrs)
       @post.published_at ||= Time.zone.now
+      puts "1111111"  + Blogo.config.markup_lang.to_s
       @post.markup_lang    = Blogo.config.markup_lang
       render_and_set_content!
     end

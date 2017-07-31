@@ -4,7 +4,7 @@ module Blogo::Renderer
 
     # :nodoc:
     def render(raw_text)
-      "1" + raw_text.bbcode_to_html({}, false)
+      raw_text.bbcode_to_html({}, false)
     end
   end
 end
